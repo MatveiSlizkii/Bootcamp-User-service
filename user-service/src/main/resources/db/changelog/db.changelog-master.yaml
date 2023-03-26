@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-master.yaml
+  - changeSet:
+      id: 1
+      author: matvei_slizkii
+      preConditions:
+        - onFail: HALT
+          not:
+            tableExists:
+              tableName: users
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: uuid
+                  type: BINARY(16)
+                  constraints:
+                    primaryKey: true
+                    nullable: true
+              - column:
+                  name: name
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: surname
+                  type: VARCHAR(40)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: patronymic
+                  type: VARCHAR(40)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: email
+                  type: VARCHAR(45)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: role
+                  type: ENUM('ADMINISTRATOR', 'SALE_USER', 'CUSTOMER_USER', 'SECURE_API_USER')
+                  constraints:
+                    nullable: true
+              - column:
+                  name: dt_create
+                  type: TIMESTAMP(3)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: dt_update
+                  type: TIMESTAMP(3)
+                  constraints:
+                    nullable: true

@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "c3581226-a51c-40a4-b79f-4423af3d8e94",
+		"name": "Bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19350920"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mattyd\",\r\n    \"surname\": \"al\",\r\n    \"patronymic\": \"sdsd\",\r\n    \"email\": \"bgfdvvf@mail.com\",\r\n    \"role\": \"ADMINISTRATOR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mattyd",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "Slizkii",
+							"disabled": true
+						},
+						{
+							"key": "patron",
+							"value": "Alex",
+							"disabled": true
+						},
+						{
+							"key": "role",
+							"value": "ADMINISTRATOR",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "agfdvvf@mail.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
