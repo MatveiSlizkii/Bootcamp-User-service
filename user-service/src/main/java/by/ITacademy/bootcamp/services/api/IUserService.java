@@ -15,6 +15,13 @@ public interface IUserService {
      */
     User save (User user);
     List<User> getAll ();
+
+    /**
+     * Предоставляет сведения о всех пользователях с фильтром
+     * по имейлам от a-z в формате Pageable
+     * @param pageable
+     * @return
+     */
     Page<User> getAll(Pageable pageable);
 
     /**

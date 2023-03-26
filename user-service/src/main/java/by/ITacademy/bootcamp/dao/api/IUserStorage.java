@@ -9,7 +9,13 @@ import java.util.UUID;
 
 @Repository
 public interface IUserStorage extends JpaRepository<UserEntity, UUID> {
+    /*
+    Предоставляет всех пользователей с бд с фильтром по имейлам в порядке от a до z
+     */
     List<UserEntity> findAllByOrderByEmailAsc();
 
+    /*
+    Проверка есть ли пользователей с данным имейлом
+     */
     boolean existsUserEntityByEmail(String email);
 }

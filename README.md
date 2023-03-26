@@ -1,6 +1,6 @@
-# Weather Application
+# User Application
 ## Description
-The application is designed to provide the latest weather data, average weather data for a certain period of time.
+The application is designed to enter information about users into the database and provide the entire list of users entered into the database.
 
 ## Features
 - CRUD operation for Weather
