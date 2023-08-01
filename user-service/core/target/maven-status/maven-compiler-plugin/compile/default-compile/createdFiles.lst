@@ -1,0 +1,14 @@
+by\ITacademy\core\config\WebConfig.class
+by\ITacademy\core\converters\UserEntityConverter.class
+by\ITacademy\core\controllers\advice\SingleResponseError.class
+by\ITacademy\core\services\api\IUserService.class
+by\ITacademy\core\converters\LongToLocalDateTimeConverter.class
+by\ITacademy\core\UserService.class
+by\ITacademy\core\services\exception\ValidationError.class
+by\ITacademy\core\services\exception\ValidationException.class
+by\ITacademy\core\controllers\advice\MultipleResponseError.class
+by\ITacademy\core\serializer\UserFullNameSerializer.class
+by\ITacademy\core\dto\User.class
+by\ITacademy\core\controllers\advice\ExceptionAdvice.class
+by\ITacademy\core\dto\User$Builder.class
+by\ITacademy\core\converters\UserConverter.class

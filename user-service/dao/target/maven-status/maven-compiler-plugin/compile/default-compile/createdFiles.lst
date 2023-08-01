@@ -1,0 +1,6 @@
+by\ITacademy\dao\entity\UserEntity$Builder.class
+by\ITacademy\dao\api\IUserStorage.class
+by\ITacademy\dao\UserStorage.class
+by\ITacademy\dao\entity\UserEntity.class
+by\ITacademy\dao\entity\RoleUser.class
+by\ITacademy\dao\DaoApplication.class
